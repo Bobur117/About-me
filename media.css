@@ -1,0 +1,146 @@
+/* 1400px - 1399.99px
+
+1200px - 1199.99px
+
+992px - 991.99px
+
+768px - 767.99px
+
+576px - 575.99px */
+
+@media (max-width:1199.99px) {
+    
+    .nav {
+        padding: 15px;
+    }
+    
+    .about__me-title {
+        font-size: 32px;
+    }
+    
+    .about__me {
+        padding: 30px;
+    }
+    
+    .about__text-title {
+        font-size: 28px;
+    }
+}
+@media (max-width:991.99px) {
+    
+    .nav__content-logo {
+        font-size: 32px;
+        
+    }
+    .list__link{
+        font-size: 20po;
+    }
+    
+    .about__me-text{
+        max-width: 500px;
+        margin-left: 0;
+        margin-top: 10px;
+        
+    }
+    
+    .about__text-title{
+        text-align: center;
+    }
+    
+    .header {
+        min-height: 600px;
+    }
+    
+    .about__me-content {
+        
+        flex-direction: column;
+       
+    }
+    .about__me-content img {
+        max-width: 100%;
+    }
+    
+    .projects__cards{
+        
+        justify-content: center;
+        row-gap: 30px;
+        column-gap: 30px;
+        
+    }
+    
+    .project__card-item img {
+        max-width: 100%; 
+    }
+
+    
+}
+@media (max-width:767.99px) {
+    
+    .nav {
+        position: relative;
+    }
+    
+    .list__link {
+        margin: 0;
+        
+    }
+    .nav__content-list {
+        position: absolute;
+        flex-direction: column;
+        background: black;
+        top: 100%;
+        left: -100%;
+        padding: 20px;
+        gap: 15px;
+        transition: .5s;
+        
+        
+    }
+    
+    .nav__content-menu:hover .nav__content-list {
+        left: 0;
+    }
+    
+    .menu__btn{
+        display: flex;
+    }
+    
+    .header{
+        min-height: 600px;
+    }
+    .header__content-title{
+        font-size: 28px;
+        margin-bottom: 40px;
+        line-height: 36px;
+        padding: 0 10;
+        text-align: center;
+    }
+    .header__content-btn{
+        padding: 10px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .footer__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    
+}
+
+
+@media (max-width:575.99px) {
+    .nav__content-logo {
+    font-size: 24px;
+    }
+    .menu__btn{
+        width: 20px;
+        height: 20px;
+        
+    }
+
+
+}
